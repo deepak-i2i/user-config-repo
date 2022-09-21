@@ -11,4 +11,4 @@ spring:
 welcome:
   message: PROD Env- Welocome to patient module 
 secret:
-  key: YWdkaWRqNnl0cmUzZHZjZ2hrbDJmZHNoc2tkczBqZGpkNTNzamRmc3JzaW0=
+  key: ${secretKey}
