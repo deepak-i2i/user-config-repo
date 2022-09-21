@@ -1,0 +1,14 @@
+spring:
+# MySQL connection properties
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+# Point to Vault secure dbusername    
+    username: ${dbusername}
+# Point to Vault secure dbpassword 
+    password: ${dbpassword}
+    url: jdbc:mysql://localhost:3306/healthcaredb?createDatabaseIfNotExist=true&useSSL=false
+
+welcome:
+  message: PROD Env- Welocome to patient module 
+secret:
+  key: YWdkaWRqNnl0cmUzZHZjZ2hrbDJmZHNoc2tkczBqZGpkNTNzamRmc3JzaW0=
