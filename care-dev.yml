@@ -9,44 +9,5 @@ spring:
     password: ${dbpassword}
     url: jdbc:mysql://localhost:3306/healthcaredb?createDatabaseIfNotExist=true&useSSL=false
 
-# Reading from message.properties
-  messages:
-    basename: messages
-
-# Log JPA queries. Comment this in production
-  jpa:
-    show-sql: true
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate: 
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-
-# Hashicorp vault configuration
-  config:
-    import: vault://
-  application:
-    name: care
-  cloud:
-    vault:
-      host: localhost
-      port: 8200
-      scheme: http
-      token: hvs.m91Oib8ds8i0CRX1NJxmIOCp
-      kv:
-        enabled: true
-    config:
-      uri: http://localhost:8888
-
-logging:
-  level:
-    root: info
-    com.health: info
-  pattern:
-    console: "%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"
-    file: "%d %p %c{1.} [%t] %m%n"
-  file:
-    name: C:\Users\Public\Projects\Logs_care\care_app.log
-
 welcome:
   message: DEV env- Welcome to Spring cloud config server     
