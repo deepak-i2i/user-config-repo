@@ -10,3 +10,5 @@ spring:
 
 welcome:
   message: UAT Env- Welocome to user module 
+secret:
+  key: YWdkaWRqNnl0cmUzZHZjZ2hrbDJmZHNoc2tkczBqZGpkNTNzamRmc3JzaW0=  
