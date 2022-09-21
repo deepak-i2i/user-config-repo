@@ -11,4 +11,4 @@ spring:
 
 welcome:
   message: Updated DEV Env- Welocome to user module 
-  test: test refresh in Config
+  test: Updated test refresh in Config
