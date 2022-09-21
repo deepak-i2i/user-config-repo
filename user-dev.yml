@@ -11,3 +11,5 @@ spring:
 
 welcome:
   message: DEV Env- Welocome to user module 
+secret:
+  key: MySecretKey
